@@ -11,9 +11,9 @@ const myStyle = {
 };
 
 function App() {
-  const [amount, setAmount] = useState("");
+  const [amount, setAmount] = useState("0");
 
-  const formating = amount => {
+  const formating = (e, amount) => {
     // Handle carachter
     let toRp = amount.replace(/[^,\d]/g, "").toString();
     let split = toRp.split(",");
@@ -26,16 +26,31 @@ function App() {
 
     if (ribuan) {
       let separator = sisa ? "." : "";
-      let _rp = rupiah += separator + ribuan.join(".");
-      setAmount(_rp)
+      let _rp = (rupiah += separator + ribuan.join("."));
+      setAmount(_rp);
     }
   };
 
   return (
     <div className="App" style={myStyle}>
-      <h1>Mata uang indonesia</h1>
-      {amount}
-      <input onChange={e => formating(e.target.value)} />
+      <h1>Indonesia Rupiah</h1>
+      <div className="separator" />
+      <div className="output-amount">
+        <p>Rp {amount}</p>
+      </div>
+      <div className="input-wrapper">
+        <input
+          type="number"
+          placeholder="Masukan angka"
+          className="input-amount"
+          onKeyDown={e => {
+            if (e.key == "Enter") {
+              formating(e, e.target.value);
+            }
+          }}
+        />
+        <button className="input-button">Enter</button>
+      </div>
     </div>
   );
 }

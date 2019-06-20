@@ -1,45 +1,67 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-color: rgba(95,209,249, .3)
+  /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
 }
 
-.App {
-  text-align: center;
-  color: #282c34 !important;
-}
+/* Text Style */
 .App > h1 {
-  font-weight: 600;
-  line-height: 62px;
+  color: #222222;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/* Sepatator */
+.separator {
+  background: rgb(255, 148, 114);
+  width: 78px;
+  height: 6px;
+  border-radius: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Amount */
+.output-amount {
+  padding: 20px;
+}
+.output-amount > p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Input Style */
+.input-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.input-amount {
+  margin-bottom: 20px;
+  border-radius: 22px;
+  background-color: #fff;
+  color: rgb(255, 148, 114);
+  border: 2px solid transparent;
+  padding: 10px 50px;
+  font-size: 14px !important;
+  font-weight: 700;
+  outline: none;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-button {
+  margin-bottom: 20px;
+  border-radius: 22px;
+  background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+  color: #fff;
+  border: 0px;
+  padding: 10px 50px;
+  font-size: 14px !important;
+  font-weight: 700;
+  outline: none;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+.input-button:active {
+  transform: scale(0.91);
 }
