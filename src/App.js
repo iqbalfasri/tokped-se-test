@@ -14,20 +14,22 @@ function App() {
   const [amount, setAmount] = useState("0");
 
   const formating = (e, amount) => {
-    // Handle character
-    let toRp = amount.replace(/[^,\d]/g, "").toString();
-    let split = toRp.split(",");
-    //
-    let sisa = split[0].length % 3;
-    //
-    let rupiah = split[0].substr(0, sisa);
-    //
-    let ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+    if (e.key === "Enter") {
+      // Handle character
+      let toRp = amount.replace(/[^,\d]/g, "").toString();
+      let split = toRp.split(",");
+      //
+      let sisa = split[0].length % 3;
+      //
+      let rupiah = split[0].substr(0, sisa);
+      //
+      let ribuan = split[0].substr(sisa).match(/\d{3}/gi);
 
-    if (ribuan) {
-      let separator = sisa ? "." : "";
-      let _rp = (rupiah += separator + ribuan.join("."));
-      setAmount(_rp);
+      if (ribuan) {
+        let separator = sisa ? "." : "";
+        let _rp = (rupiah += separator + ribuan.join("."));
+        setAmount(_rp);
+      }
     }
   };
 
@@ -43,13 +45,11 @@ function App() {
           type="number"
           placeholder="Masukan angka"
           className="input-amount"
-          onKeyDown={e => {
-            if (e.key == "Enter") {
-              formating(e, e.target.value);
-            }
-          }}
+          onKeyDown={e => formating(e, e.target.value)}
         />
-        <p className="input-muted-text">* Tekan enter untuk melihat hasil yang di masukan </p>
+        <p className="input-muted-text">
+          * Tekan enter untuk melihat hasil yang di masukan{" "}
+        </p>
       </div>
     </div>
   );
