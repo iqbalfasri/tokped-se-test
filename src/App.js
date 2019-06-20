@@ -14,7 +14,7 @@ function App() {
   const [amount, setAmount] = useState("0");
 
   const formating = (e, amount) => {
-    // Handle carachter
+    // Handle character
     let toRp = amount.replace(/[^,\d]/g, "").toString();
     let split = toRp.split(",");
     //
