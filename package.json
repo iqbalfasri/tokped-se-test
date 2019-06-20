@@ -2,6 +2,7 @@
   "name": "tokped-se-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://iqbalfasri.github.io/tokped-se-test/",
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "gh-pages": "^2.0.1",
