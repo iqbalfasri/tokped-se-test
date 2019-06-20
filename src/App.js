@@ -49,7 +49,7 @@ function App() {
             }
           }}
         />
-        <button className="input-button">Enter</button>
+        <p className="input-muted-text">* Tekan enter untuk melihat hasil yang di masukan </p>
       </div>
     </div>
   );
