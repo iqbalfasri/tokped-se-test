@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tokped-se-test/precache-manifest.f5b5ed89904a1354dd9101af42ddc876.js"
+  "/tokped-se-test/precache-manifest.2526d378a720a32b8d7e8d8b9827f44d.js"
 );
 
 self.addEventListener('message', (event) => {

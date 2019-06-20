@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tokped-se-test/static/css/main.17901192.chunk.css",
-    "main.js": "/tokped-se-test/static/js/main.9399ffa3.chunk.js",
-    "main.js.map": "/tokped-se-test/static/js/main.9399ffa3.chunk.js.map",
+    "main.css": "/tokped-se-test/static/css/main.8a4b9b29.chunk.css",
+    "main.js": "/tokped-se-test/static/js/main.beed716b.chunk.js",
+    "main.js.map": "/tokped-se-test/static/js/main.beed716b.chunk.js.map",
     "runtime~main.js": "/tokped-se-test/static/js/runtime~main.1a1822c0.js",
     "runtime~main.js.map": "/tokped-se-test/static/js/runtime~main.1a1822c0.js.map",
     "static/js/2.d042e1ad.chunk.js": "/tokped-se-test/static/js/2.d042e1ad.chunk.js",
     "static/js/2.d042e1ad.chunk.js.map": "/tokped-se-test/static/js/2.d042e1ad.chunk.js.map",
     "index.html": "/tokped-se-test/index.html",
-    "precache-manifest.f5b5ed89904a1354dd9101af42ddc876.js": "/tokped-se-test/precache-manifest.f5b5ed89904a1354dd9101af42ddc876.js",
+    "precache-manifest.2526d378a720a32b8d7e8d8b9827f44d.js": "/tokped-se-test/precache-manifest.2526d378a720a32b8d7e8d8b9827f44d.js",
     "service-worker.js": "/tokped-se-test/service-worker.js",
-    "static/css/main.17901192.chunk.css.map": "/tokped-se-test/static/css/main.17901192.chunk.css.map"
+    "static/css/main.8a4b9b29.chunk.css.map": "/tokped-se-test/static/css/main.8a4b9b29.chunk.css.map"
   }
 }
